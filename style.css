@@ -1,0 +1,138 @@
+/*
+Theme Name: Twenty Sixteen ACEF
+Theme URI: https://github.com/Jon007/twenty-sixteen-acef/
+Template: twentysixteen
+Author: Jonathan Moore
+Author URI: https://jonmoblog.wordpress.com/
+Description: Twenty Sixteen ACEF is a set of customizations on the standard twenty-sixteen theme for compatibility with BuddyPress and ACEF organization style
+Version: 1
+Updated: 2017-04-12 15:55:24
+License: GNU General Public License
+License URI: https://github.com/Jon007/acef/blob/master/LICENSE
+Tags: grid-layout, featured-image-header, featured-images,  full-width-template, e-commerce, photography, translation-ready
+Text Domain: acef
+*/
+
+#buddypress div.item-list-tabs ul li a {
+    color: #dd3333; 
+}
+#buddypress #activity-stream li .activity-content .activity-header a {
+    color: #dd3333;
+}
+body.buddypress.custom-background{
+  background-color:white;
+  border-top: 15px solid green;
+}
+#page{margin:0px;}
+
+button, button[disabled]:hover, button[disabled]:focus, input[type="button"], input[type="button"][disabled]:hover, input[type="button"][disabled]:focus, input[type="reset"], input[type="reset"][disabled]:hover, input[type="reset"][disabled]:focus, input[type="submit"], input[type="submit"][disabled]:hover, input[type="submit"][disabled]:focus {
+  text-transform:none;
+}
+.bp-user #buddypress table a, #buddypress table a {
+    color: #dd3333;
+}
+#buddypress table tr th {
+    background: #f3f3f3;
+    border-color: #b7b7b7;
+    color: #000;
+}
+#buddypress .standard-form .mce-tinymce button, #bbpress-forums{border:1px solid transparent;background:transparent;text-align:left;font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+#buddypress .standard-form .mce-tinymce button:hover, #bbpress-forums .mce-tinymce button:hover{
+    box-shadow: inset 0 1px 0 #fff, 0 1px 0 rgba(0,0,0,.08);
+    outline: 0;
+    background:transparent;
+}
+
+@media screen and (min-width: 56.875em){
+.no-sidebar .entry-header, .no-sidebar .entry-content, .no-sidebar .entry-summary, .no-sidebar .entry-footer, .no-sidebar .comments-area, .no-sidebar .image-navigation, .no-sidebar .post-navigation, .no-sidebar .pagination, .no-sidebar .page-header, .no-sidebar .page-content, .no-sidebar .content-bottom-widgets {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+}
+@media screen and (min-width: 61.5625em){
+body.no-sidebar:not(.search-results) article:not(.type-page) .entry-content {
+    float: left;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 100%;
+}
+}
+/*
+header{display:none;}
+body.home-page header, .bbpress header{display:block;padding-top:0px;}
+*/
+div.doc-content {
+    font-weight: normal;
+}
+#buddypress .standard-form button, #buddypress a.button, #buddypress input[type=submit], #buddypress input[type=button], #buddypress input[type=reset], #buddypress ul.button-nav li a, #buddypress .generic-button a, #buddypress .comment-reply-link, a.bp-title-button{
+	border-radius:5px;
+}
+#buddypress td.thread-options a{
+	border: 1px solid #ccc;
+	border-radius:5px;
+}
+/*hide memberstats option messages*/
+#item-body #buddymemberstats-personal-li {display:none;}
+.first-attempt-msg {display:none;}
+/*hide profile field visibility messages*/
+#profile-personal-li{display:none;}
+
+.textwidget h4, .entry-content h4 {
+	letter-spacing: normal;
+	text-transform: none;
+}
+/* form display fixes */
+#buddypress .standard-form textarea, #buddypress .standard-form input[type=text], #buddypress .standard-form input[type=color], #buddypress .standard-form input[type=date], #buddypress .standard-form input[type=datetime], #buddypress .standard-form input[type=datetime-local], #buddypress .standard-form input[type=email], #buddypress .standard-form input[type=month], #buddypress .standard-form input[type=number], #buddypress .standard-form input[type=range], #buddypress .standard-form input[type=search], #buddypress .standard-form input[type=tel], #buddypress .standard-form input[type=time], #buddypress .standard-form input[type=url], #buddypress .standard-form input[type=week], #buddypress .standard-form select, #buddypress .standard-form input[type=password], #buddypress .dir-search input[type=search], #buddypress .dir-search input[type=text], #buddypress .groups-members-search input[type=search], #buddypress .groups-members-search input[type=text]{
+  font-size:0.85em;
+  line-height:1em
+}
+#buddypress .standard-form label, #buddypress .standard-form span.label, #buddypress .standard-form legend {
+    display: inline-block;
+}
+#main #buddypress .standard-form input[type='text'], #main #buddypress .standard-form input[type='email'], #main #buddypress .standard-form input[type='password'], #main #buddypress .standard-form textarea {
+    width: 80%;
+}
+#buddypress ul.item-list li .item .item-title .update {
+    display: inline;
+}
+@media screen and (min-width: 61.5625em){
+#buddypress ul.item-list li .item {width: 85%;}
+#members-group-list div.bp-widget div.profile-fields{position:absolute;left:250px;top:45px;}
+#members-list div.bp-widget div.profile-fields div, #members-group-list div.bp-widget div.profile-fields div{display:inline-block;padding-right:2em;}
+}
+/* turn off for BPNouveau layout
+#buddypress ul.item-list li div.action {position:absolute;top:15px}
+*/
+.bp-widget span p {margin:0;display:inline-block;font-size:14px;line-height:0.85em;}
+.bp-widget span.label, .bp-widget span.data{font-size:14px;}
+/* where field visibility is not user-modifiable, hide message */
+.field-visibility-settings-notoggle{display:none;}
+
+/* enable different messages depending whether user is logged in */
+body .logged-out-message{display:inherit;}
+body.logged-in .logged-out-message{display:none;}
+body .logged-in-message{display:none;}
+body.logged-in .logged-in-message{display:inherit;}
+.student-message {display:none;}
+body.member-type-student .student-message {display:inherit;}
+.teacher-message {display:none;}
+body.member-type-teacher .teacher-message {display:inherit;}
+#doc_content_ifr{height:400px!important}
+
+/* bp nouveau front end display fixes*/
+div.item-avatar{display:inline-block;}
+ul.friends-list li.vcard{display:inline-block;}
+div.profile-fields{font-size:14px;line-height:1em;}
+
+/*allow multiline descriptions on profile field explanations */
+div.editfield p.description span.text{white-space:pre;}
+@media screen and (min-width: 38.75em){
+	#buddypress div.dir-search form label {width:60%;}
+	#buddypress div.dir-search form input[type='text']{width:100%;}
+}
+/*correct bad twenty-sixteen css making buttons unclear*/
+#buddypress div.dir-search form input[type='text'], #buddypress div.dir-search form input[type='submit'], #buddypress div.message-search form input[type='text'], #buddypress div.message-search form input[type='submit'], #buddypress li.groups-members-search form input[type='text'], #buddypress li.groups-members-search form input[type='submit'] {
+border:1px solid #cccccc;
+}
+/*twenty-sixteen has margin bottom -20 and button is cut off...*/
+#buddypress ul.item-list li div.action {margin-bottom: 0px;}
